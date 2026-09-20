@@ -7,6 +7,7 @@ import { Menu, X, Phone } from "lucide-react";
 
 const NAV_LINKS = [
   { label: "About", href: "about" },
+  { label: "Why Us", href: "why" },
   { label: "Facilities", href: "facilities" },
   { label: "Contact", href: "contact" },
 ];
@@ -25,7 +26,7 @@ export default function Navbar() {
 
   useEffect(() => {
     const sections = NAV_LINKS.map((link) =>
-      document.getElementById(link.href)
+      document.getElementById(link.href),
     ).filter(Boolean) as HTMLElement[];
 
     observerRef.current = new IntersectionObserver(
@@ -36,7 +37,7 @@ export default function Navbar() {
           }
         });
       },
-      { rootMargin: "-40% 0px -50% 0px", threshold: 0 }
+      { rootMargin: "-40% 0px -50% 0px", threshold: 0 },
     );
 
     sections.forEach((section) => observerRef.current?.observe(section));
@@ -57,7 +58,10 @@ export default function Navbar() {
         className="max-w-[1240px] mx-auto flex items-center justify-between px-5 sm:px-8"
       >
         {/* Logo */}
-        <Link href="#top" className="flex items-center">
+        <Link
+          href="#top"
+          className="flex items-center"
+        >
           <Image
             src="/logo.png"
             alt="Devine Medical Group"
@@ -76,8 +80,8 @@ export default function Navbar() {
             const isActive = activeSection === link.href;
             return (
               <li key={link.href}>
-                
-                <a  href={`#${link.href}`}
+                <a
+                  href={`#${link.href}`}
                   className="relative text-sm font-medium text-[#161F2E] pb-1 group"
                 >
                   {link.label}
@@ -93,11 +97,15 @@ export default function Navbar() {
         </ul>
 
         {/* Desktop CTA */}
-        
-        <a  href="tel:+263784083740"
+
+        <a
+          href="tel:+263784083740"
           className="hidden md:inline-flex items-center gap-2 bg-[#1D4E89] hover:bg-[#0F2C4C] text-white text-sm font-medium px-6 py-3 rounded-full transition-all duration-300"
         >
-          <Phone size={15} aria-hidden="true" />
+          <Phone
+            size={15}
+            aria-hidden="true"
+          />
           Book an Appointment
         </a>
 
@@ -118,8 +126,8 @@ export default function Navbar() {
           <ul className="flex flex-col gap-5">
             {NAV_LINKS.map((link) => (
               <li key={link.href}>
-                
-                 <a  href={`#${link.href}`}
+                <a
+                  href={`#${link.href}`}
                   onClick={() => setIsOpen(false)}
                   className="text-base font-medium text-[#161F2E]"
                 >
@@ -128,11 +136,14 @@ export default function Navbar() {
               </li>
             ))}
             <li>
-              
-              <a  href="tel:+263784083740"
+              <a
+                href="tel:+263784083740"
                 className="flex items-center justify-center gap-2 bg-[#1D4E89] text-white text-sm font-medium px-6 py-3 rounded-full mt-2"
               >
-                <Phone size={15} aria-hidden="true" />
+                <Phone
+                  size={15}
+                  aria-hidden="true"
+                />
                 Book an Appointment
               </a>
             </li>
