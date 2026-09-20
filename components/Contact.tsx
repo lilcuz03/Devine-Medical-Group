@@ -4,7 +4,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { MapPin, Phone, Mail, Clock, MessageCircle } from "lucide-react";
 
-const WEB3FORMS_KEY = "YOUR_ACCESS_KEY_HERE"; // from web3forms.com
+const WEB3FORMS_KEY = "c3f1ba04-036c-47cf-9a2c-b1116ce3a589"; // from web3forms.com
 const WHATSAPP_NUMBER = "263784083740";
 
 export default function Contact() {
