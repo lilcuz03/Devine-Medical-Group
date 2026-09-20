@@ -23,7 +23,7 @@ export default function Hero() {
         alt=""
         fill
         priority
-        className="object-cover"
+        className="object-cover object-[75%_center] sm:object-[65%_center] lg:object-center"
       />
 
       <div
@@ -54,21 +54,24 @@ export default function Hero() {
 
           <p className="mt-6 text-[#F1EDE3] text-base sm:text-lg leading-relaxed max-w-[560px]">
             Devine Medical Group provides high-quality, comprehensive medical
-            services to Mt Darwin and the surrounding community — from
-            emergency care to long-term nursing and rehabilitation.
+            services to Mt Darwin and the surrounding community — from emergency
+            care to long-term nursing and rehabilitation.
           </p>
 
           <div className="mt-10 flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-6">
-            
-             <a href="tel:+263784083740"
+            <a
+              href="tel:+263784083740"
               className="group inline-flex items-center gap-2.5 bg-white text-[#0F2C4C] font-medium px-7 py-4 rounded-full transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5"
             >
-              <Phone size={16} aria-hidden="true" />
+              <Phone
+                size={16}
+                aria-hidden="true"
+              />
               Call +263 784 083 740
             </a>
 
-            
-            <a  href="#contact"
+            <a
+              href="#contact"
               className="group inline-flex items-center gap-2 text-white font-medium px-2 py-4 transition-colors duration-300 hover:text-[#E8A33D]"
             >
               Get Directions
@@ -89,7 +92,10 @@ export default function Hero() {
           className="mt-14 sm:mt-16 pb-14 sm:pb-20 flex flex-wrap gap-x-10 gap-y-6 border-t border-white/15 pt-8"
         >
           {stats.map((stat, i) => (
-            <div key={stat.label} className={i > 0 ? "pl-10 border-l border-white/15" : ""}>
+            <div
+              key={stat.label}
+              className={i > 0 ? "pl-10 border-l border-white/15" : ""}
+            >
               <p
                 className="font-serif text-white text-3xl sm:text-4xl"
                 style={{ fontFamily: "var(--font-fraunces)" }}
