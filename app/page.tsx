@@ -6,6 +6,7 @@ import Contact from "@/components/Contact";
 import LocationMap from "@/components/LocationMap";
 import FAQ from "@/components/FAQ";
 import Testimonials from "@/components/Testimonials";
+import WhyDevine from "@/components/WhyDevine";
 export const metadata: Metadata = {
   title: "Home",
   description:
@@ -20,8 +21,9 @@ export default function HomePage() {
     <>
       <Hero />
       <About />
+      <WhyDevine />
       <Facilities />
-      <Testimonials />
+      {/* <Testimonials /> */}
       <Contact />
       <FAQ />
       <LocationMap />
