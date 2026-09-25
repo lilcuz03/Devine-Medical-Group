@@ -32,6 +32,7 @@ const reasons = [
 export default function WhyDevine() {
   return (
     <section
+      id="why"
       aria-labelledby="why-heading"
       className="py-16 sm:py-24 lg:py-32 bg-[#F3EEE2] border-t border-[#E3DCCF]"
     >
