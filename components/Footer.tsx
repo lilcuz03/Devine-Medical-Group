@@ -92,7 +92,7 @@ export default function Footer() {
               <li>
                 <a
                   href="mailto:emmanuel.devinemedicalgroup@gmail.com"
-                  className="flex items-center gap-2.5 text-sm text-[#F1EDE3]/80 hover:text-white transition-colors duration-300"
+                  className="flex items-center gap-2.5 break-all text-sm text-[#F1EDE3]/80 hover:text-white transition-colors duration-300"
                 >
                   <Mail
                     size={15}

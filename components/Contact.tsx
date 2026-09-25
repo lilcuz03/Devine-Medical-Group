@@ -130,7 +130,7 @@ export default function Contact() {
 
                   <a
                     href="mailto:emmanuel.devinemedicalgroup@gmail.com"
-                    className="text-lg font-medium text-[#0F2C4C] hover:text-[#1D4E89] transition-colors duration-300"
+                    className="break-all text-lg font-medium text-[#0F2C4C] hover:text-[#1D4E89] transition-colors duration-300"
                   >
                     emmanuel.devinemedicalgroup@gmail.com
                   </a>
