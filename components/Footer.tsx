@@ -18,6 +18,7 @@ const InstagramIcon = (props: React.SVGProps<SVGSVGElement>) => (
 
 const quickLinks = [
   { label: "About", href: "#about" },
+  { label: "Why Us", href: "#why" },
   { label: "Facilities", href: "#facilities" },
   { label: "Contact", href: "#contact" },
 ];
