@@ -20,7 +20,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.devinemedicalgroup.com"),
+  metadataBase: new URL("https://www.devinemedicalgroup.co.zw"),
   title: {
     default:
       "Devine Medical Group | Hospital, Nursing Home & Rehab in Mt Darwin",
@@ -68,6 +68,29 @@ export default function RootLayout({
         <main id="top">{children}</main>
         <Footer />
         <WhatsAppButton />
+
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Hospital",
+              name: "Devine Medical Group",
+              description:
+                "Devine Medical Group provides high-quality, comprehensive medical services to Mt Darwin and the surrounding community — from emergency care to long-term nursing and rehabilitation.",
+              url: "https://www.devinemedicalgroup.co.zw",
+              telephone: "+263784083740",
+              email: "info@devinemedicalgroup.org.zw",
+              address: {
+                "@type": "PostalAddress",
+                streetAddress: "Corner Kadere and Makina Village",
+                addressLocality: "Mt Darwin",
+                addressCountry: "ZW",
+              },
+              openingHours: "Mo-Su 00:00-24:00",
+            }),
+          }}
+        />
       </body>
     </html>
   );
