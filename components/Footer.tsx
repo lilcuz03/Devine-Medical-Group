@@ -33,22 +33,22 @@ export default function Footer() {
       <div className="max-w-[1240px] mx-auto px-5 sm:px-8">
         <div className="grid sm:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-8 pb-12 border-b border-white/10">
           {/* Brand */}
-          <div className="lg:col-span-5">
+          <div className="text-center sm:text-left lg:col-span-5">
             <Image
               src="/logo_white.png"
               alt="Devine Medical Group"
               width={200}
               height={56}
-              className="h-11 sm:h-12 w-auto"
+              className="mx-auto h-11 sm:mx-0 sm:h-12 w-auto"
             />
-            <p className="mt-5 text-sm leading-relaxed text-[#F1EDE3]/60 max-w-[320px]">
+            <p className="mx-auto mt-5 max-w-[320px] text-sm leading-relaxed text-[#F1EDE3]/60 sm:mx-0">
               Delivering compassionate & excellent healthcare to Mt Darwin and
               surrounding areas since 2010.
             </p>
           </div>
 
           {/* Quick links */}
-          <div className="lg:col-span-3 lg:col-start-7">
+          <div className="text-center sm:text-left lg:col-span-3 lg:col-start-7">
             <p className="text-sm font-medium text-white/50">Navigate</p>
             <ul className="mt-4 space-y-3">
               {quickLinks.map((link) => (
@@ -65,10 +65,10 @@ export default function Footer() {
           </div>
 
           {/* Contact */}
-          <div className="lg:col-span-4 lg:col-start-10">
+          <div className="text-center sm:text-left lg:col-span-4 lg:col-start-10">
             <p className="text-sm font-medium text-white/50">Contact</p>
             <ul className="mt-4 space-y-3">
-              <li className="flex items-start gap-2.5 text-sm text-[#F1EDE3]/80">
+              <li className="flex items-start justify-center gap-2.5 text-sm text-[#F1EDE3]/80 sm:justify-start">
                 <MapPin
                   size={15}
                   className="mt-0.5 flex-shrink-0"
@@ -79,7 +79,7 @@ export default function Footer() {
               <li>
                 <a
                   href="tel:+263784083740"
-                  className="flex items-center gap-2.5 text-sm text-[#F1EDE3]/80 hover:text-white transition-colors duration-300"
+                  className="flex items-center justify-center gap-2.5 text-sm text-[#F1EDE3]/80 hover:text-white transition-colors duration-300 sm:justify-start"
                 >
                   <Phone
                     size={15}
@@ -92,7 +92,7 @@ export default function Footer() {
               <li>
                 <a
                   href="mailto:emmanuel.devinemedicalgroup@gmail.com"
-                  className="flex items-center gap-2.5 break-all text-sm text-[#F1EDE3]/80 hover:text-white transition-colors duration-300"
+                  className="flex items-center justify-center gap-2.5 break-all text-sm text-[#F1EDE3]/80 hover:text-white transition-colors duration-300 sm:justify-start"
                 >
                   <Mail
                     size={15}
