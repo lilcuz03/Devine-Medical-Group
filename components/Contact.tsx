@@ -56,7 +56,11 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" aria-labelledby="contact-heading" className="py-16 sm:py-24 lg:py-32">
+    <section
+      id="contact"
+      aria-labelledby="contact-heading"
+      className="py-16 sm:py-24 lg:py-32"
+    >
       <div className="max-w-[1240px] mx-auto px-5 sm:px-8">
         <div className="grid lg:grid-cols-12 gap-10 lg:gap-16">
           {/* Left: heading + direct details */}
@@ -78,12 +82,17 @@ export default function Contact() {
               Contact Information
             </h2>
             <p className="mt-6 text-[#161F2E]/80 text-base sm:text-lg leading-relaxed max-w-[440px]">
-              Reach out any time — our emergency care unit is staffed around the clock.
+              Reach out any time — our emergency care unit is staffed around the
+              clock.
             </p>
 
             <div className="mt-10 space-y-6">
               <div className="flex items-start gap-4">
-                <MapPin size={18} className="mt-1 text-[#1D4E89] flex-shrink-0" aria-hidden="true" />
+                <MapPin
+                  size={18}
+                  className="mt-1 text-[#1D4E89] flex-shrink-0"
+                  aria-hidden="true"
+                />
                 <div>
                   <p className="text-sm text-[#161F2E]/60">Address</p>
                   <p className="text-lg font-medium text-[#0F2C4C]">
@@ -94,11 +103,16 @@ export default function Contact() {
                 </div>
               </div>
               <div className="flex items-start gap-4">
-                <Phone size={18} className="mt-1 text-[#1D4E89] flex-shrink-0" aria-hidden="true" />
+                <Phone
+                  size={18}
+                  className="mt-1 text-[#1D4E89] flex-shrink-0"
+                  aria-hidden="true"
+                />
                 <div>
                   <p className="text-sm text-[#161F2E]/60">Phone</p>
-                  
-                   <a href="tel:+263784083740"
+
+                  <a
+                    href="tel:+263784083740"
                     className="text-lg font-medium text-[#0F2C4C] hover:text-[#1D4E89] transition-colors duration-300"
                   >
                     +263 784 083 740
@@ -106,22 +120,33 @@ export default function Contact() {
                 </div>
               </div>
               <div className="flex items-start gap-4">
-                <Mail size={18} className="mt-1 text-[#1D4E89] flex-shrink-0" aria-hidden="true" />
+                <Mail
+                  size={18}
+                  className="mt-1 text-[#1D4E89] flex-shrink-0"
+                  aria-hidden="true"
+                />
                 <div>
                   <p className="text-sm text-[#161F2E]/60">Email</p>
-                  
-                 <a   href="mailto:info@devinemedicalgroup.org.zw"
+
+                  <a
+                    href="mailto:emmanuel.devinemedicalgroup@gmail.com"
                     className="text-lg font-medium text-[#0F2C4C] hover:text-[#1D4E89] transition-colors duration-300"
                   >
-                    info@devinemedicalgroup.org.zw
+                    emmanuel.devinemedicalgroup@gmail.com
                   </a>
                 </div>
               </div>
               <div className="flex items-start gap-4">
-                <Clock size={18} className="mt-1 text-[#1D4E89] flex-shrink-0" aria-hidden="true" />
+                <Clock
+                  size={18}
+                  className="mt-1 text-[#1D4E89] flex-shrink-0"
+                  aria-hidden="true"
+                />
                 <div>
                   <p className="text-sm text-[#161F2E]/60">Emergency Care</p>
-                  <p className="text-lg font-medium text-[#0F2C4C]">Open 24 hours, every day</p>
+                  <p className="text-lg font-medium text-[#0F2C4C]">
+                    Open 24 hours, every day
+                  </p>
                 </div>
               </div>
             </div>
@@ -138,7 +163,10 @@ export default function Contact() {
           >
             <div className="grid sm:grid-cols-2 gap-6">
               <div>
-                <label htmlFor="name" className="block text-sm font-medium text-[#161F2E] mb-2">
+                <label
+                  htmlFor="name"
+                  className="block text-sm font-medium text-[#161F2E] mb-2"
+                >
                   Full name
                 </label>
                 <input
@@ -152,7 +180,10 @@ export default function Contact() {
                 />
               </div>
               <div>
-                <label htmlFor="phone" className="block text-sm font-medium text-[#161F2E] mb-2">
+                <label
+                  htmlFor="phone"
+                  className="block text-sm font-medium text-[#161F2E] mb-2"
+                >
                   Phone number
                 </label>
                 <input
@@ -168,7 +199,10 @@ export default function Contact() {
             </div>
 
             <div className="mt-6">
-              <label htmlFor="email" className="block text-sm font-medium text-[#161F2E] mb-2">
+              <label
+                htmlFor="email"
+                className="block text-sm font-medium text-[#161F2E] mb-2"
+              >
                 Email address
               </label>
               <input
@@ -183,7 +217,10 @@ export default function Contact() {
             </div>
 
             <div className="mt-6">
-              <label htmlFor="message" className="block text-sm font-medium text-[#161F2E] mb-2">
+              <label
+                htmlFor="message"
+                className="block text-sm font-medium text-[#161F2E] mb-2"
+              >
                 Message
               </label>
               <textarea
@@ -211,7 +248,11 @@ export default function Contact() {
                 onClick={handleWhatsAppSubmit}
                 className="flex-1 inline-flex items-center justify-center gap-2 whitespace-nowrap bg-[#25D366] hover:bg-[#1DA851] text-white text-sm sm:text-base font-medium px-6 py-4 rounded-full transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5"
               >
-                <MessageCircle size={17} className="flex-shrink-0" aria-hidden="true" />
+                <MessageCircle
+                  size={17}
+                  className="flex-shrink-0"
+                  aria-hidden="true"
+                />
                 Send via WhatsApp
               </button>
             </div>

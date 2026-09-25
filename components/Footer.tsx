@@ -42,8 +42,8 @@ export default function Footer() {
               className="h-11 sm:h-12 w-auto"
             />
             <p className="mt-5 text-sm leading-relaxed text-[#F1EDE3]/60 max-w-[320px]">
-              Delivering compassionate & excellent healthcare to Mt Darwin
-              and surrounding areas since 2010.
+              Delivering compassionate & excellent healthcare to Mt Darwin and
+              surrounding areas since 2010.
             </p>
           </div>
 
@@ -69,7 +69,11 @@ export default function Footer() {
             <p className="text-sm font-medium text-white/50">Contact</p>
             <ul className="mt-4 space-y-3">
               <li className="flex items-start gap-2.5 text-sm text-[#F1EDE3]/80">
-                <MapPin size={15} className="mt-0.5 flex-shrink-0" aria-hidden="true" />
+                <MapPin
+                  size={15}
+                  className="mt-0.5 flex-shrink-0"
+                  aria-hidden="true"
+                />
                 Corner Kadere and Makina Village, Mt Darwin, Zimbabwe
               </li>
               <li>
@@ -77,17 +81,25 @@ export default function Footer() {
                   href="tel:+263784083740"
                   className="flex items-center gap-2.5 text-sm text-[#F1EDE3]/80 hover:text-white transition-colors duration-300"
                 >
-                  <Phone size={15} className="flex-shrink-0" aria-hidden="true" />
+                  <Phone
+                    size={15}
+                    className="flex-shrink-0"
+                    aria-hidden="true"
+                  />
                   +263 784 083 740
                 </a>
               </li>
               <li>
                 <a
-                  href="mailto:info@devinemedicalgroup.org.zw"
+                  href="mailto:emmanuel.devinemedicalgroup@gmail.com"
                   className="flex items-center gap-2.5 text-sm text-[#F1EDE3]/80 hover:text-white transition-colors duration-300"
                 >
-                  <Mail size={15} className="flex-shrink-0" aria-hidden="true" />
-                  info@devinemedicalgroup.org.zw
+                  <Mail
+                    size={15}
+                    className="flex-shrink-0"
+                    aria-hidden="true"
+                  />
+                  emmanuel.devinemedicalgroup@gmail.com
                 </a>
               </li>
             </ul>
@@ -108,7 +120,7 @@ export default function Footer() {
               rel="noopener noreferrer"
               className="text-xs text-[#F1EDE3]/40 hover:text-white transition-colors duration-300"
             >
-              Built by Tafadzwa Chiri
+              Built by taachii
             </a>
 
             <div className="flex items-center gap-4">
@@ -123,7 +135,10 @@ export default function Footer() {
                     aria-label={social.label}
                     className="text-[#F1EDE3]/50 hover:text-white transition-colors duration-300"
                   >
-                    <Icon className="w-4 h-4" aria-hidden="true" />
+                    <Icon
+                      className="w-4 h-4"
+                      aria-hidden="true"
+                    />
                   </a>
                 );
               })}
