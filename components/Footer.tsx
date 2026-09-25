@@ -74,7 +74,9 @@ export default function Footer() {
                   className="mt-0.5 flex-shrink-0"
                   aria-hidden="true"
                 />
-                Corner Kadere and Makina Village, Mt Darwin, Zimbabwe
+                <span className="min-w-0 break-words">
+                  Corner Kadere and Makina Village, Mt Darwin, Zimbabwe
+                </span>
               </li>
               <li>
                 <a
@@ -86,7 +88,7 @@ export default function Footer() {
                     className="flex-shrink-0"
                     aria-hidden="true"
                   />
-                  +263 784 083 740
+                  <span className="min-w-0">+263 784 083 740</span>
                 </a>
               </li>
               <li>
@@ -99,7 +101,9 @@ export default function Footer() {
                     className="flex-shrink-0"
                     aria-hidden="true"
                   />
-                  emmanuel.devinemedicalgroup@gmail.com
+                  <span className="min-w-0 break-all">
+                    emmanuel.devinemedicalgroup@gmail.com
+                  </span>
                 </a>
               </li>
             </ul>
